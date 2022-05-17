@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CasualWorkout</string>
+    <string name="button_save">Guardar</string>
+    <string name="button_cancel">Discartar</string>
+    <string name="name_input">Nome Treino</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
