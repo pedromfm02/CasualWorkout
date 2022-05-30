@@ -3,19 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_criar_treinos.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_do_treino.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_edit_ex.xml" value="0.136" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_edit_treino.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_exercicios.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/activity_treino.xml" value="0.152" />
+        <entry key="..\:/Users/azeve/AndroidStudioProjects/CasualWorkout/app/src/main/res/layout/fragment_exercicio.xml" value="0.22554347826086957" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_criar_treinos.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_do_treino.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_edit_ex.xml" value="0.17282051282051283" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_edit_treino.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_escrever_ex.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_exercicios.xml" value="0.1335711454617519" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/activity_treino.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/pedro/OneDrive/Ambiente de Trabalho/IHC/CasualWorkout/app/src/main/res/layout/fragment_exercicio.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

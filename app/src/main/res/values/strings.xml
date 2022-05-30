@@ -11,4 +11,9 @@
     <string name="button_treino">Treinar</string>
     <string name="button_editar">Editar</string>
     <string name="ex">Ex</string>
+    <string name="tabEx">Exercicios</string>
+    <string name="editEx1">Flexões           4X10</string>
+    <string name="editEx2">Lunges            3X15</string>
+    <string name="editEx3">Burppes           3X20</string>
+
 </resources>
