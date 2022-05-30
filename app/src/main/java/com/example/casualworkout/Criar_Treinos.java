@@ -1,15 +1,21 @@
 package com.example.casualworkout;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class Criar_Treinos extends AppCompatActivity {
 
     private static final String LOG_TAG = Criar_Treinos.class.getSimpleName();
+    String op = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +35,47 @@ public class Criar_Treinos extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void Escolha(){
+        if(op == "escrever"){
+            Intent op1 = new Intent(this,Escrever_Ex.class);
+            startActivity(op1);
+        }else if(op == "Escolher"){
+            Intent op2 = new Intent(this,Exercicios.class);
+            startActivity(op2);
+        }
+    }
+
     public void AddEx(View view) {
         Log.d(LOG_TAG, "Add Exercise");
+        AlertDialog.Builder myAlertBuilder = new AlertDialog.Builder(Criar_Treinos.this);
+        // Set the dialog title and message.
+        myAlertBuilder.setTitle("Adicionar Exercício:");
+        myAlertBuilder.setMessage("Escolha ou escreva o exercício:");
+        // Add the dialog buttons.
+        // Add the dialog buttons.
+        myAlertBuilder.setPositiveButton("Escrever", new
+                DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // User clicked OK button.
+                        //Toast.makeText(getApplicationContext(), "Pressed OK", Toast.LENGTH_SHORT).show();
+                        op = "escrever";
+                    }
+                });
+        myAlertBuilder.setNegativeButton("Escolher", new
+                DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // User cancelled the dialog.
+                        //Toast.makeText(getApplicationContext(), "Pressed Cancel", Toast.LENGTH_SHORT).show();
+                        op = "Escolher";
+                    }
+                });
+        myAlertBuilder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                Escolha();
+            }
+        });
+        // Create and show the AlertDialog.
+        myAlertBuilder.show();
     }
 }

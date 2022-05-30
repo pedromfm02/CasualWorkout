@@ -5,4 +5,10 @@
     <string name="name_input">Nome Treino</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Button_EX_save">Guardar</string>
+    <string name="Button_EX_cancel">Cancelar</string>
+    <string name="Treinos">treino1</string>
+    <string name="button_treino">Treinar</string>
+    <string name="button_editar">Editar</string>
+    <string name="ex">Ex</string>
 </resources>

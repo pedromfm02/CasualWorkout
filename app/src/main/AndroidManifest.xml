@@ -14,9 +14,16 @@
         android:theme="@style/Theme.CasualWorkout"
         tools:targetApi="31">
         <activity
+            android:name=".EditEX"
+            android:exported="false" />
+        <activity
+            android:name=".Escrever_Ex"
+            android:exported="false"
+            android:label="Adicionar Exercício" />
+        <activity
             android:name=".Exercicios"
             android:exported="false"
-            android:label="Exercicios"/>
+            android:label="Adicionar Exercício" />
         <activity
             android:name=".DoTreino"
             android:exported="false"
