@@ -11,13 +11,12 @@
         android:layout_height="0dp"
         android:background="@color/purple_200"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button_Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421"
-        >
+        app:layout_constraintVertical_bias="0.421">
 
 
         <TableRow
@@ -33,28 +32,26 @@
                 android:textSize="30sp" />
 
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
                 android:text="Flexões"
-                android:padding="10sp"
-                android:textSize="25sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
                 android:text="4X10"
-                android:padding="10sp"
-                android:textSize="25sp"
-                android:layout_weight="2"
-                android:gravity="center_horizontal"
-                />
-
+                android:textSize="25sp" />
 
 
         </TableRow>
@@ -64,52 +61,46 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
                 android:text="lunges"
-                android:padding="10sp"
-                android:textSize="25sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="3X15"
-                android:padding="10sp"
-                android:textSize="25sp"
                 android:layout_weight="2"
                 android:gravity="center_horizontal"
-                />
-
+                android:padding="10sp"
+                android:text="3X15"
+                android:textSize="25sp" />
 
 
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Burpees"
-                android:padding="10sp"
-                android:textSize="25sp"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"
-                />
+                android:padding="10sp"
+                android:text="Burpees"
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="3X20"
-                android:padding="10sp"
-                android:textSize="25sp"
                 android:layout_weight="2"
                 android:gravity="center_horizontal"
-                />
-
+                android:padding="10sp"
+                android:text="3X20"
+                android:textSize="25sp" />
 
 
         </TableRow>
-
 
 
     </TableLayout>
@@ -118,12 +109,13 @@
         android:id="@+id/chronometer"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:textSize="50dp"
+        android:layout_marginBottom="232dp"
         android:gravity="center"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="376dp">
+        app:layout_constraintStart_toStartOf="parent">
 
     </Chronometer>
 
@@ -131,9 +123,11 @@
         android:id="@+id/bt_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginBottom="56dp"
+        android:text="@string/bt_reset"
+        android:onClick="end"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

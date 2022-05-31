@@ -7,25 +7,25 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class Exercicios extends AppCompatActivity {
+public class Exercicios_2 extends AppCompatActivity {
 
-    private static final String LOG_TAG = Exercicios.class.getSimpleName();
+    private static final String LOG_TAG = Exercicios_2.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercicios);
+        setContentView(R.layout.activity_exercicios2);
     }
 
     public void Save(View view) {
         Log.d(LOG_TAG, "Save");
-        Intent intent = new Intent(this, Criar_Treinos.class);
+        Intent intent = new Intent(this, Treino.class);
         startActivity(intent);
     }
 
     public void Cancel(View view) {
         Log.d(LOG_TAG, "Cancel");
-        Intent intent = new Intent(this, Criar_Treinos.class);
+        Intent intent = new Intent(this, Treino.class);
         startActivity(intent);
     }
 }

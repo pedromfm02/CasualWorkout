@@ -38,10 +38,10 @@ public class EditTreino extends AppCompatActivity {
 
     public void Escolha_ADD(){
         if(op == "escrever"){
-            Intent op1 = new Intent(this,Escrever_Ex.class);
+            Intent op1 = new Intent(this,Escrever_Ex_2.class);
             startActivity(op1);
         }else if(op == "Escolher"){
-            Intent op2 = new Intent(this,Exercicios.class);
+            Intent op2 = new Intent(this,Exercicios_2.class);
             startActivity(op2);
         }
     }
@@ -89,7 +89,7 @@ public class EditTreino extends AppCompatActivity {
         Adicionar.show();
     }
 
-    public void edit(View view) {
+    public void edit_ex(View view) {
         Log.d(LOG_TAG, "Edit Exercise");
         AlertDialog.Builder Editar = new AlertDialog.Builder(EditTreino.this);
         // Set the dialog title and message.
@@ -122,4 +122,5 @@ public class EditTreino extends AppCompatActivity {
         // Create and show the AlertDialog.
         Editar.show();
     }
+
 }
