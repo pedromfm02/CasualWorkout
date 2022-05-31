@@ -11,7 +11,7 @@ import android.view.View;
 
 public class EditTreino extends AppCompatActivity {
 
-    private static final String LOG_TAG = Criar_Treinos.class.getSimpleName();
+    private static final String LOG_TAG = EditTreino.class.getSimpleName();
     String op = "";
 
     @Override
