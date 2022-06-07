@@ -1,4 +1,4 @@
-package com.example.casualworkout.DataBase;
+package com.example.casualworkout;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

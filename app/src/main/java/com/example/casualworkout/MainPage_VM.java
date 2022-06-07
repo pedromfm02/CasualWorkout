@@ -1,4 +1,4 @@
-package com.example.casualworkout.DataBase;
+package com.example.casualworkout;
 
 import android.app.Application;
 
@@ -6,23 +6,25 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+
+
 import java.util.List;
 
 public class MainPage_VM  extends AndroidViewModel {
-    private Treino_repository Repository;
+    private static Repository Repository;
     private final LiveData<List<Treinos>> lst_Tr;
 
     public MainPage_VM(@NonNull Application application) {
         super(application);
-        Repository = new Treino_repository(application);
-        lst_Tr = Repository.getTreinos();
+        Repository = new Repository(application);
+        lst_Tr = Repository.getLst_tr();
     }
 
-    LiveData<List<Treinos>> getTreinos() {
+    public LiveData<List<Treinos>> getLst_tr() {
         return lst_Tr;
     }
 
-    public void insert(Treinos treino) {
+    public static void insert(Treinos treino) {
         Repository.insert(treino);
     }
 }

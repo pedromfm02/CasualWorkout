@@ -1,4 +1,4 @@
-package com.example.casualworkout.DataBase;
+package com.example.casualworkout;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
@@ -11,13 +11,9 @@ public class Treinos {
     @NonNull
     public String Nome_Treino;
 
-    public String Descrição;
-
-    public String getTreinos() {
+    public String getNome_Treino() {
         return Nome_Treino;
     }
 
-    public String getDescrição(){
-        return Descrição;
-    }
+
 }

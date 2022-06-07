@@ -8,25 +8,41 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.EditText;
 
 public class Criar_Treinos extends AppCompatActivity {
 
     private static final String LOG_TAG = Criar_Treinos.class.getSimpleName();
     String op = "";
 
+    private EditText EditTreino;
+    public static final String EXTRA_REPLY = "com.example.android.treinolist.REPLY";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_treinos);
+        EditTreino = findViewById(R.id.edit_treino);
     }
 
     public void Save(View view) {
         Log.d(LOG_TAG, "Save");
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent();
+
+        if (TextUtils.isEmpty(EditTreino.getText())) {
+            setResult(RESULT_CANCELED, intent);
+        } else {
+            String word = EditTreino.getText().toString();
+            intent.putExtra(EXTRA_REPLY, word);
+            setResult(RESULT_OK, intent);
+        }
+        finish();
+
+
+
     }
 
     public void Cancel(View view) {

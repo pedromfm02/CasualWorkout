@@ -7,21 +7,21 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-class Treinos_Holder extends RecyclerView.ViewHolder {
-    private final TextView TreinoView;
+class MP_Holder extends RecyclerView.ViewHolder {
+    private final TextView Nome_TR_View;
 
-    private Treinos_Holder(View itemView) {
+    private MP_Holder(View itemView) {
         super(itemView);
-        TreinoView = itemView.findViewById(R.id.textView);
+        Nome_TR_View = itemView.findViewById(R.id.textView);
     }
 
     public void bind(String text) {
-        TreinoView.setText(text);
+        Nome_TR_View.setText(text);
     }
 
-    static Treinos_Holder create(ViewGroup parent) {
+    static MP_Holder create(ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerview_item, parent, false);
-        return new Treinos_Holder(view);
+        return new MP_Holder(view);
     }
 }

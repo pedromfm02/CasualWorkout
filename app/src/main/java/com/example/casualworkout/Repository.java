@@ -1,4 +1,4 @@
-package com.example.casualworkout.DataBase;
+package com.example.casualworkout;
 
 import android.app.Application;
 
@@ -6,12 +6,12 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-class Treino_repository {
+class Repository {
     private Treinos_DAO Tr_DAO;
     private LiveData<List<Treinos>> lst_tr;
 
 
-    Treino_repository(Application application) {
+    Repository(Application application) {
         CasualWorkoutDB db = CasualWorkoutDB.getDatabase(application);
         Tr_DAO = db.TreinosDao();
         lst_tr = Tr_DAO.Lst_Treinos();
@@ -19,7 +19,7 @@ class Treino_repository {
 
     // Room executes all queries on a separate thread.
     // Observed LiveData will notify the observer when the data has changed.
-    LiveData<List<Treinos>> getTreinos() {
+    LiveData<List<Treinos>> getLst_tr() {
         return lst_tr;
     }
 
