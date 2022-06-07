@@ -19,7 +19,7 @@ public class EditEX extends AppCompatActivity {
 
     public void Save(View view) {
         Log.d(LOG_TAG, "Save");
-        Intent intent = new Intent(this, Treino.class);
+        Intent intent = new Intent(this, EditTreino.class);
         startActivity(intent);
 
         //Guardar os dados novos
@@ -27,7 +27,7 @@ public class EditEX extends AppCompatActivity {
 
     public void Cancel(View view) {
         Log.d(LOG_TAG, "Cancel");
-        Intent intent = new Intent(this, Treino.class);
+        Intent intent = new Intent(this, EditTreino.class);
         startActivity(intent);
 
         // não faz nenhuma mudança no exercicio

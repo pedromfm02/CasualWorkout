@@ -1,6 +1,8 @@
 package com.example.casualworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        final TreinoListAdapter adapter = new TreinoListAdapter(new TreinoListAdapter.TreinoDiff());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     public void AddTr(View view) {
@@ -23,9 +30,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void do_treino(View view) {
-        Log.d(LOG_TAG, "Treino clicked!");
-        Intent intent = new Intent(this, Treino.class);
-        startActivity(intent);
-    }
 }
